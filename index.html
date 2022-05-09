@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+      <head>
+        <meta charset="utf-8">
+        <title>Your Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="shortcut icon" href="img/logo.png">
+        <!-- google font css-->
+
+        <!-- bootstraf css-->
+
+      <!-- library and main css-->
+        <link rel="stylesheet" href="style.css">
+      </head>
+
+  <body>
+    <div class="container" id ="bike">
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+          <h2>THE BMW</h2>
+          <h1>G 310 R</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi quis dolorem alias dignissimos quas quibusdam deserunt? Sequi aspernatur earum quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quaerat. </p>
+          <h3>Choose your color</h3>
+          <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+          </div>
+        </div>
+    </div>
+    <!---Javascript--->
+    <script>
+      let redBtn = document.getElementById("red");
+      let blueBtn = document.getElementById("blue");
+      let blackBtn = document.getElementById("black");
+      let bike = document.getElementById("bike");
+
+      redBtn.onclick = function(){
+        bike.style.backgroundImage = "url(img/BMW1.png)";
+      }
+      blueBtn.onclick = function(){
+        bike.style.backgroundImage = "url(img/BMW2.png)";
+      }
+      blackBtn.onclick = function(){
+        bike.style.backgroundImage = "url(img/BMW3.png)";
+      }
+    </script>
+  </body>
+</html>
